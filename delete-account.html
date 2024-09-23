@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Account Request</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+    h1 {
+      color: #ff3b3f;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
+      color: #666;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #ff3b3f;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e32f34;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Delete Account Request</h1>
+    <p>Please fill out the form below to request the deletion of your account.</p>
+    <form action="https://formspree.io/devsphere.apps@gmail.com" method="POST">
+      <input type="email" name="email" placeholder="Your email address" required>
+      <textarea name="reason" placeholder="Reason for deletion (optional)" rows="4"></textarea>
+      <button type="submit">Submit Request</button>
+    </form>
+    <p>We will process your request and confirm via email within 5-7 business days.</p>
+  </div>
+</body>
+</html>
